@@ -1,19 +1,19 @@
 # SimpleBio
 
-[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/smilegupta)
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/smilegupta) [![Made With Love](https://img.shields.io/badge/Made%20With-Love-orange.svg)](https://github.com/smilegupta)
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/shbhm00)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/smilegupta) [![Made With Love](https://img.shields.io/badge/Made%20With-Love-orange.svg)](https://github.com/shbhm00)
 
 #### Sometimes, creating an attractive bio is essential. Here's an exapmle of sample and basic bio signature [example]( https://smilegupta.github.io/SimpleBio/) to realize that the signature can be not boring, but eye-catching, elegant and recognizable.
 
 ## Usage
 
-Use [this](https://github.com/smilegupta/SimpleBio) repository to create properly designed and attractive bio for a beginner. 
+Use [this](https://github.com/shbhm00/SimpleBio) repository to create properly designed and attractive bio for a beginner. 
 
-Clone [this](https://github.com/smilegupta/SimpleBio) repository and edit `index.html` to get your own attractive bio.
+Clone [this](https://github.com/shbhm00/SimpleBio) repository and edit `index.html` to get your own attractive bio.
 
 ```bash
 
-git clone https://github.com/smilegupta/SimpleBio/ 
+git clone https://github.com/shbhm00/SimpleBio/ 
 
 open index.html
 
