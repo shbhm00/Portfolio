@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio showcasing projects, skills, and experience" />
+    <meta name="theme-color" content="#14b8a6" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Preconnect to Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Load distinctive fonts - avoiding generic AI aesthetics -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>Portfolio | Full Stack Developer</title>
+  </head>
+  <body>
+    <!-- 
+      Root element for React application
+      The 'antialiased' class enables font smoothing
+      Initial dark mode class is set via JavaScript before React hydrates to prevent flash
+    -->
+    <div id="root" class="antialiased"></div>
+    
+    <!-- 
+      Inline script to prevent flash of wrong theme
+      This runs BEFORE React loads, setting the correct theme class immediately
+    -->
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+    
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
