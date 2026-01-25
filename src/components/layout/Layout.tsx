@@ -11,41 +11,12 @@
  * common page elements that shouldn't be re-rendered on navigation.
  */
 
-import { Outlet, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { Outlet } from 'react-router-dom';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { ScrollToTop } from './ScrollToTop';
 
-/**
- * Page transition animation variants
- */
-const pageVariants = {
-  initial: {
-    opacity: 0,
-    y: 20,
-  },
-  enter: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.3,
-      ease: 'easeOut',
-    },
-  },
-  exit: {
-    opacity: 0,
-    y: -10,
-    transition: {
-      duration: 0.2,
-      ease: 'easeIn',
-    },
-  },
-};
-
 export function Layout() {
-  const location = useLocation();
-
   return (
     <div className="min-h-screen flex flex-col bg-stone-50 dark:bg-stone-900">
       {/* 
@@ -62,26 +33,15 @@ export function Layout() {
 
       <Header />
 
-      {/* Main content with route transitions */}
-      <AnimatePresence mode="wait">
-        <motion.main
-          key={location.pathname}
-          id="main-content"
-          className="flex-grow pt-16 md:pt-20"
-          initial="initial"
-          animate="enter"
-          exit="exit"
-          variants={pageVariants}
-          tabIndex={-1}
-        >
-          {/* 
-            Outlet renders the matched child route component
-            LEARNING NOTE: This is how React Router v6+ handles nested routes.
-            The Layout is the parent route, and pages are child routes.
-          */}
-          <Outlet />
-        </motion.main>
-      </AnimatePresence>
+      {/* Main content */}
+      <main id="main-content" className="flex-grow pt-16 md:pt-20" tabIndex={-1}>
+        {/* 
+          Outlet renders the matched child route component
+          LEARNING NOTE: This is how React Router v6+ handles nested routes.
+          The Layout is the parent route, and pages are child routes.
+        */}
+        <Outlet />
+      </main>
 
       <Footer />
 
