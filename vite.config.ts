@@ -12,6 +12,9 @@ import path from 'path';
  */
 export default defineConfig({
   plugins: [react()],
+  // Set base path for GitHub Pages deployment
+  // Change '/portfolio/' to your repo name if different, or '/' for custom domain
+  base: process.env.GITHUB_ACTIONS ? '/portfolio/' : '/',
   resolve: {
     // Path aliases for cleaner imports throughout the application
     // Instead of: import { Button } from '../../../components/ui/Button'
