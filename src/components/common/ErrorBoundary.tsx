@@ -156,7 +156,7 @@ function ErrorFallback({ error, onReset, onReload }: ErrorFallbackProps) {
         </p>
 
         {/* Error Details (development only) */}
-        {process.env.NODE_ENV === 'development' && error && (
+        {import.meta.env.DEV && error && (
           <details className="mb-6 text-left">
             <summary className="cursor-pointer text-sm text-stone-500 hover:text-stone-700 dark:hover:text-stone-300">
               Error details
