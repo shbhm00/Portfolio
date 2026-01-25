@@ -79,18 +79,20 @@ function HeroSection() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-wrap gap-4"
           >
-            <Button
-              as="a"
-              href="/projects"
-              variant="primary"
-              size="lg"
-              rightIcon={<ArrowRightIcon className="w-5 h-5" />}
-            >
-              View My Work
-            </Button>
-            <Button as="a" href="/contact" variant="outline" size="lg">
-              Get in Touch
-            </Button>
+            <Link to="/projects">
+              <Button
+                variant="primary"
+                size="lg"
+                rightIcon={<ArrowRightIcon className="w-5 h-5" />}
+              >
+                View My Work
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button variant="outline" size="lg">
+                Get in Touch
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </div>
@@ -183,15 +185,11 @@ function CTASection() {
           I'm always interested in hearing about new projects and opportunities. Whether you have a
           question or just want to say hi, feel free to reach out!
         </p>
-        <Button
-          as="a"
-          href="/contact"
-          variant="primary"
-          size="lg"
-          rightIcon={<ArrowRightIcon className="w-5 h-5" />}
-        >
-          Start a Conversation
-        </Button>
+        <Link to="/contact">
+          <Button variant="primary" size="lg" rightIcon={<ArrowRightIcon className="w-5 h-5" />}>
+            Start a Conversation
+          </Button>
+        </Link>
       </motion.div>
     </Section>
   );
