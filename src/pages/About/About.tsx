@@ -50,18 +50,41 @@ export function About() {
               variants={ANIMATION_VARIANTS.fadeUp}
               className="text-lg text-stone-600 dark:text-stone-400 mb-4"
             >
-              I'm a Full Stack Developer with over 6 years of experience building web applications.
-              I specialize in React and TypeScript, with a passion for creating beautiful,
-              accessible, and performant user interfaces.
+              I'm a{' '}
+              <span className="text-primary-600 dark:text-primary-400 font-semibold">
+                Senior Software Engineer
+              </span>{' '}
+              with{' '}
+              <span className="text-primary-600 dark:text-primary-400 font-semibold">4+ years</span>{' '}
+              of experience specializing in{' '}
+              <span className="text-primary-600 dark:text-primary-400 font-semibold">
+                React Native
+              </span>{' '}
+              and{' '}
+              <span className="text-primary-600 dark:text-primary-400 font-semibold">React</span>. I
+              build scalable, high-performance mobile and web applications that serve millions of
+              users.
+            </motion.p>
+
+            <motion.p
+              variants={ANIMATION_VARIANTS.fadeUp}
+              className="text-lg text-stone-600 dark:text-stone-400 mb-4"
+            >
+              My expertise spans the entire mobile development lifecycle—from architecting complex
+              features like video streaming with DRM, adaptive bitrate, and live content, to
+              optimizing app performance and reducing startup times. I've delivered consumer-facing
+              products with <span className="font-semibold">1M+ downloads</span> and handled{' '}
+              <span className="font-semibold">35K+ concurrent users</span>.
             </motion.p>
 
             <motion.p
               variants={ANIMATION_VARIANTS.fadeUp}
               className="text-lg text-stone-600 dark:text-stone-400 mb-6"
             >
-              When I'm not coding, you can find me contributing to open source projects, writing
-              technical blog posts, or exploring the latest web technologies. I believe in
-              continuous learning and sharing knowledge with the community.
+              Beyond coding, I'm passionate about modernizing legacy codebases, mentoring fellow
+              engineers, and building reusable component libraries. I believe in writing clean,
+              type-safe code and continuously improving development workflows through automation and
+              best practices.
             </motion.p>
 
             <motion.div
