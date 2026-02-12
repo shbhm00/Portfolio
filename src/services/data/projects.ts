@@ -9,8 +9,8 @@ import type { Project } from '@/types';
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Sooka OTT Platform',
-    slug: 'sooka-ott-platform',
+    title: 'OTT Platform',
+    slug: 'ott-platform',
     description:
       'A high-performance OTT streaming platform with 1M+ downloads and 35K+ concurrent users, featuring DRM, live streaming, and short-video feeds.',
     longDescription: `
