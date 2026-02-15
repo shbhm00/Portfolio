@@ -27,7 +27,7 @@ interface SEOProps {
 }
 
 const SITE_NAME = SITE_CONFIG.author;
-const BASE_URL = 'https://shubhammishra.dev';
+const BASE_URL = 'https://codewithshubham.me';
 const DEFAULT_DESCRIPTION = SITE_CONFIG.description;
 const DEFAULT_IMAGE = `${BASE_URL}/og-image.png`;
 

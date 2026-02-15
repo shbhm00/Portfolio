@@ -2,67 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://shubhammishra.dev/</loc>
+    <loc>https://codewithshubham.me/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- About -->
   <url>
-    <loc>https://shubhammishra.dev/about</loc>
+    <loc>https://codewithshubham.me/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Projects -->
   <url>
-    <loc>https://shubhammishra.dev/projects</loc>
+    <loc>https://codewithshubham.me/projects</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Blog -->
   <url>
-    <loc>https://shubhammishra.dev/blog</loc>
+    <loc>https://codewithshubham.me/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Blog Posts -->
   <url>
-    <loc>https://shubhammishra.dev/blog/tiktok-style-vertical-video-player-react-native</loc>
+    <loc>https://codewithshubham.me/blog/tiktok-style-vertical-video-player-react-native</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://shubhammishra.dev/blog/react-native-performance-optimization</loc>
+    <loc>https://codewithshubham.me/blog/react-native-performance-optimization</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://shubhammishra.dev/blog/video-streaming-react-native</loc>
+    <loc>https://codewithshubham.me/blog/video-streaming-react-native</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://shubhammishra.dev/blog/typescript-react-native-best-practices</loc>
+    <loc>https://codewithshubham.me/blog/typescript-react-native-best-practices</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://shubhammishra.dev/blog/graphql-react-native-ecommerce</loc>
+    <loc>https://codewithshubham.me/blog/graphql-react-native-ecommerce</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://shubhammishra.dev/blog/react-native-reanimated-animations</loc>
+    <loc>https://codewithshubham.me/blog/react-native-reanimated-animations</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Contact -->
   <url>
-    <loc>https://shubhammishra.dev/contact</loc>
+    <loc>https://codewithshubham.me/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
