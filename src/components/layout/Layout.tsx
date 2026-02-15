@@ -11,10 +11,25 @@
  * common page elements that shouldn't be re-rendered on navigation.
  */
 
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { ScrollToTop } from './ScrollToTop';
+
+/**
+ * Scrolls the window to the top on every route change.
+ * This ensures navigating to a new page always starts from the top.
+ */
+function ScrollRestoration() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 export function Layout() {
   return (
@@ -31,6 +46,7 @@ export function Layout() {
         Skip to main content
       </a>
 
+      <ScrollRestoration />
       <Header />
 
       {/* Main content */}
