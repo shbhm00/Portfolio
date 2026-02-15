@@ -17,7 +17,7 @@ import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Section } from '@/components/layout';
 import { Button, Input, Textarea, EmailIcon, LocationIcon, CheckIcon } from '@/components/ui';
-import { useForm } from '@/hooks';
+import { useForm, useSEO } from '@/hooks';
 import { SITE_CONFIG, ANIMATION_VARIANTS, VALIDATION_MESSAGES } from '@/constants';
 import { isValidEmail, isEmpty } from '@/utils';
 import type { ContactFormData } from '@/types';
@@ -67,6 +67,13 @@ function validateContactForm(
 }
 
 export function Contact() {
+  useSEO({
+    title: 'Contact',
+    description:
+      'Get in touch with Shubham Mishra. Reach out for freelance projects, collaboration opportunities, or just to say hello.',
+    path: '/contact',
+  });
+
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   /**

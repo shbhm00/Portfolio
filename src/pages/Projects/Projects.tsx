@@ -14,6 +14,7 @@ import { Button } from '@/components/ui';
 import { ProjectCard } from './components/ProjectCard';
 import { getAllProjects } from '@/services';
 import { ANIMATION_VARIANTS, getStaggerDelay } from '@/constants';
+import { useSEO } from '@/hooks';
 import type { ProjectStatus } from '@/types';
 
 type FilterOption = 'all' | ProjectStatus;
@@ -25,6 +26,13 @@ const filterOptions: { value: FilterOption; label: string }[] = [
 ];
 
 export function Projects() {
+  useSEO({
+    title: 'Projects',
+    description:
+      'Explore projects by Shubham Mishra — OTT streaming platforms, e-commerce apps, and open-source React Native libraries built for scale and performance.',
+    path: '/projects',
+  });
+
   const [filter, setFilter] = useState<FilterOption>('all');
   const allProjects = getAllProjects();
 

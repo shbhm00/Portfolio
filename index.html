@@ -3,33 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal portfolio showcasing projects, skills, and experience" />
+
+    <!-- Primary Meta Tags -->
+    <title>Shubham Mishra | Senior Software Engineer - React Native & React</title>
+    <meta name="title" content="Shubham Mishra | Senior Software Engineer - React Native & React" />
+    <meta name="description" content="Senior Software Engineer with 4+ years of experience building scalable mobile applications using React Native and React. Expert in performance optimization, video streaming, and mobile development." />
+    <meta name="keywords" content="Shubham Mishra, Software Engineer, React Native Developer, React Developer, Mobile Development, Video Streaming, Performance Optimization, Noida, India" />
+    <meta name="author" content="Shubham Mishra" />
+    <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#14b8a6" />
-    
+    <link rel="canonical" href="https://shubhammishra.dev/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shubhammishra.dev/" />
+    <meta property="og:title" content="Shubham Mishra | Senior Software Engineer" />
+    <meta property="og:description" content="Senior Software Engineer with 4+ years of experience building scalable mobile applications using React Native and React." />
+    <meta property="og:image" content="https://shubhammishra.dev/og-image.png" />
+    <meta property="og:site_name" content="Shubham Mishra Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://shubhammishra.dev/" />
+    <meta property="twitter:title" content="Shubham Mishra | Senior Software Engineer" />
+    <meta property="twitter:description" content="Senior Software Engineer with 4+ years of experience building scalable mobile applications using React Native and React." />
+    <meta property="twitter:image" content="https://shubhammishra.dev/og-image.png" />
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
     <!-- Preconnect to Google Fonts for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- Load distinctive fonts - avoiding generic AI aesthetics -->
+
+    <!-- Load distinctive fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    
-    <title>Portfolio | Full Stack Developer</title>
+
+    <!-- Structured Data (JSON-LD) for Google Rich Results -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shubham Mishra",
+        "url": "https://shubhammishra.dev",
+        "jobTitle": "Senior Software Engineer",
+        "description": "Senior Software Engineer with 4+ years of experience building scalable mobile applications using React Native and React.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Noida",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://github.com/shbhm00",
+          "https://linkedin.com/in/shbhm00"
+        ],
+        "knowsAbout": [
+          "React Native",
+          "React",
+          "TypeScript",
+          "Mobile Development",
+          "Video Streaming",
+          "Performance Optimization",
+          "GraphQL"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <!-- 
+    <!--
       Root element for React application
       The 'antialiased' class enables font smoothing
-      Initial dark mode class is set via JavaScript before React hydrates to prevent flash
     -->
     <div id="root" class="antialiased"></div>
-    
-    <!-- 
+
+    <!--
       Inline script to prevent flash of wrong theme
       This runs BEFORE React loads, setting the correct theme class immediately
     -->
@@ -37,14 +89,13 @@
       (function() {
         const savedTheme = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
+
         if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
           document.documentElement.classList.add('dark');
         }
       })();
     </script>
-    
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-

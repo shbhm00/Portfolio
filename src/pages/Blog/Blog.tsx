@@ -14,8 +14,16 @@ import { Button, Badge } from '@/components/ui';
 import { BlogCard, FeaturedBlogCard } from './components/BlogCard';
 import { getAllBlogPosts, getFeaturedBlogPosts, getAllTags } from '@/services';
 import { ANIMATION_VARIANTS, getStaggerDelay } from '@/constants';
+import { useSEO } from '@/hooks';
 
 export function Blog() {
+  useSEO({
+    title: 'Blog',
+    description:
+      'Technical articles on React Native, mobile development, video streaming, performance optimization, and TypeScript by Shubham Mishra.',
+    path: '/blog',
+  });
+
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const allPosts = getAllBlogPosts();
   const featuredPosts = getFeaturedBlogPosts();

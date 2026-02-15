@@ -20,3 +20,4 @@ export {
 export { useLocalStorage } from './useLocalStorage';
 export { useScrollPosition, useIsScrolled } from './useScrollPosition';
 export { useForm } from './useForm';
+export { useSEO } from './useSEO';

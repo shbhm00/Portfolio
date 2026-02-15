@@ -11,8 +11,14 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button, ArrowRightIcon } from '@/components/ui';
+import { useSEO } from '@/hooks';
 
 export function NotFound() {
+  useSEO({
+    title: 'Page Not Found',
+    description: 'The page you are looking for does not exist.',
+  });
+
   return (
     <div className="min-h-[80vh] flex items-center justify-center px-4">
       <motion.div

@@ -14,6 +14,7 @@ import { Badge, BriefcaseIcon, AcademicCapIcon, LocationIcon, CheckIcon } from '
 import { getAllExperiences, getAllSkillCategories } from '@/services';
 import { SITE_CONFIG, ANIMATION_VARIANTS, getStaggerDelay } from '@/constants';
 import { formatDateRange } from '@/utils';
+import { useSEO } from '@/hooks';
 import type { SkillLevel } from '@/types';
 
 // Skill level to percentage mapping
@@ -25,6 +26,13 @@ const skillLevelPercent: Record<SkillLevel, number> = {
 };
 
 export function About() {
+  useSEO({
+    title: 'About',
+    description:
+      'Learn about Shubham Mishra — 4+ years of experience building high-performance mobile apps with React Native, video streaming platforms, and e-commerce solutions.',
+    path: '/about',
+  });
+
   const experiences = getAllExperiences();
   const skillCategories = getAllSkillCategories();
 

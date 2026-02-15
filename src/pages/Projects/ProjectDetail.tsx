@@ -22,12 +22,20 @@ import {
 import { ProjectCard } from './components/ProjectCard';
 import { getProjectBySlug, getRelatedProjects } from '@/services';
 import { ANIMATION_VARIANTS, getStaggerDelay } from '@/constants';
+import { useSEO } from '@/hooks';
 import { formatDateRange } from '@/utils';
 
 export function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>();
   const project = slug ? getProjectBySlug(slug) : undefined;
   const relatedProjects = slug ? getRelatedProjects(slug, 3) : [];
+
+  useSEO({
+    title: project?.title,
+    description: project?.description,
+    path: slug ? `/projects/${slug}` : '/projects',
+    image: project?.imageUrl,
+  });
 
   // Redirect to 404 if project not found
   if (!project) {

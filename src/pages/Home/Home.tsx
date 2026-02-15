@@ -15,6 +15,7 @@ import { Button, ArrowRightIcon, SparklesIcon } from '@/components/ui';
 import { ProjectCard } from '@/pages/Projects/components/ProjectCard';
 import { SITE_CONFIG, ANIMATION_VARIANTS, getStaggerDelay } from '@/constants';
 import { getFeaturedProjects } from '@/services';
+import { useSEO } from '@/hooks';
 
 /**
  * Hero Section
@@ -199,6 +200,13 @@ function CTASection() {
  * Home Page
  */
 export function Home() {
+  useSEO({
+    title: 'Home',
+    description:
+      'Shubham Mishra — Senior Software Engineer specializing in React Native, React, and scalable mobile applications. Explore my projects, blog, and experience.',
+    path: '/',
+  });
+
   return (
     <>
       <HeroSection />

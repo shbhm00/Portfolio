@@ -1,0 +1,8 @@
+# Robots.txt for Shubham Mishra Portfolio
+# https://shubhammishra.dev
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://shubhammishra.dev/sitemap.xml

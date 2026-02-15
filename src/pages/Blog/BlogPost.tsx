@@ -22,6 +22,7 @@ import { TableOfContents, MobileTableOfContents } from './components/TableOfCont
 import { ShareButtons } from './components/ShareButtons';
 import { getBlogPostBySlug, getRelatedPosts } from '@/services';
 import { ANIMATION_VARIANTS, getStaggerDelay } from '@/constants';
+import { useSEO } from '@/hooks';
 import { formatDate } from '@/utils';
 
 export function BlogPost() {
@@ -33,6 +34,15 @@ export function BlogPost() {
   const headings = useMemo(() => {
     return post ? extractHeadings(post.content) : [];
   }, [post]);
+
+  // SEO meta tags for individual blog posts
+  useSEO({
+    title: post?.title,
+    description: post?.excerpt,
+    path: slug ? `/blog/${slug}` : '/blog',
+    image: post?.coverImage,
+    type: 'article',
+  });
 
   // Reading progress tracking
   const { minutesLeft, progress } = useReadingProgress(post?.readingTime ?? 0);
