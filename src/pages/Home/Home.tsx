@@ -68,7 +68,7 @@ function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-stone-600 dark:text-stone-400 mb-8 max-w-2xl"
           >
-            4+ years of experience building scalable mobile applications using React Native and
+            5+ years of experience building scalable mobile applications using React Native and
             React. Delivered consumer-facing products with 1M+ downloads. Expert in performance
             optimization, video streaming, and cross-platform architecture.
           </motion.p>

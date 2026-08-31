@@ -18,7 +18,7 @@ export const SITE_CONFIG = {
   name: 'Portfolio',
   title: 'Senior Software Engineer',
   description:
-    'Senior Software Engineer with 4+ years of experience building scalable mobile applications using React Native and React',
+    'Senior Software Engineer with 5+ years of experience building scalable mobile applications using React Native and React',
   author: 'Shubham Mishra',
   email: 'shbhm00@gmail.com',
   phone: '+91-9695919216',
@@ -64,7 +64,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 export const DEFAULT_AUTHOR: Author = {
   name: SITE_CONFIG.author,
   avatar: '/images/avatar.jpg',
-  bio: 'Senior Software Engineer with 4+ years of experience building scalable mobile applications. Expert in React Native, performance optimization, and video streaming.',
+  bio: 'Senior Software Engineer with 5+ years of experience building scalable mobile applications. Expert in React Native, performance optimization, and video streaming.',
 };
 
 // ============================================================================

@@ -29,7 +29,7 @@ export function About() {
   useSEO({
     title: 'About',
     description:
-      'Learn about Shubham Mishra — 4+ years of experience building high-performance mobile apps with React Native, video streaming platforms, and e-commerce solutions.',
+      'Learn about Shubham Mishra — 5+ years of experience building high-performance mobile apps with React Native, video streaming platforms, and e-commerce solutions.',
     path: '/about',
   });
 
@@ -63,7 +63,7 @@ export function About() {
                 Senior Software Engineer
               </span>{' '}
               with{' '}
-              <span className="text-primary-600 dark:text-primary-400 font-semibold">4+ years</span>{' '}
+              <span className="text-primary-600 dark:text-primary-400 font-semibold">5+ years</span>{' '}
               of experience specializing in{' '}
               <span className="text-primary-600 dark:text-primary-400 font-semibold">
                 React Native
